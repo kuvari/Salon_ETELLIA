@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.c-contact{
+  display: flex;
+  position: relative;
+  border-top: solid 2px $black;
+  border-left: solid 2px $black;
+  border-right: solid 2px $black;
+} 
+.c-contact::after{
+  content: "";
+  height: 2px;
+  width: calc(100% + rem(3.5));
+  position: absolute;
+  bottom: 0;
+  left: rem(-2);
+  background: linear-gradient(90deg,#78DAB1 0%,#ACDE5C 100%);
+  z-index: 1;
+}
+
+.c-contact p{
+  position: relative;
+  padding: 1rem 10%;
+}
+.c-contact p::before{
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+}
+.c-contact__header img{
+  width: rem(30);
+  object-fit: contain;
+  margin: 0 rem(15);
+}
+.c-contact__book img{
+  width: calc((100 / 400)*100%);
+  object-fit: contain;
+  padding: 0 5%;
+}
+.c-contact-tel{
+  letter-spacing: 0.2em;
+}
+.c-contact-text{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.c-contact__header{
+  width: rem(260);
+  font-size: rem(22);
+}
+.c-contact__book{
+  width: rem(400);
+  font-size: rem(31);
+}

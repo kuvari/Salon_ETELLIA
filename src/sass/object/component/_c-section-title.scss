@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.c-section-title{
+  font-size: rem(43);
+  letter-spacing: rem(4.3);
+  font-style: italic;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: relative;
+}
+.c-section-title::after{
+  content: "";
+  position: absolute;
+  bottom: rem(-23);
+  left: rem(55);
+  height: 2px;
+  width: rem(300);
+  background: linear-gradient(90deg, #000 0%, #000 65%, #fff 65%,#fff 70%,#000 70%,#000 75%,#fff 75%,#fff 80%,#000 80%,#000 100%);
+}
