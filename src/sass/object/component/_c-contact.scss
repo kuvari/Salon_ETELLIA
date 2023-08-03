@@ -37,7 +37,7 @@
   margin: 0 rem(15);
 }
 .c-contact__book img{
-  width: calc((100 / 400)*100%);
+  width: 25%;
   object-fit: contain;
   padding: 0 5%;
 }
@@ -53,6 +53,6 @@
   font-size: rem(22);
 }
 .c-contact__book{
-  width: rem(400);
+  width: calc((100% - (rem(50) * 2)) / 3);
   font-size: rem(31);
 }

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-news__title{
+  text-align: center;
+}
+
+.p-news__card{
+  margin-top: rem(101);
+}
+
+.p-news__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: rem(89);
+}
