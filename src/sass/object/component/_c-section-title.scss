@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-section-title{
+  font-size: rem(43);
+  letter-spacing: rem(4.3);
+  font-style: italic;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+.c-section-title::after{
+  content: "";
+  position: absolute;
+  bottom: rem(-16.5);
+  left: rem(55);
+  height: rem(2);
+  width: rem(300);
+  background: linear-gradient(90deg, #000 0%, #000 69%, transparent 69%, transparent 75%, #000 75%, #000 81%, transparent 81%, transparent 87.5%, #000 87.5%, #000 100%);
+}
+.c-section-title__padding{
+  margin-left: rem(-40);
+}

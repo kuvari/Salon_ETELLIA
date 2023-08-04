@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.p-card{
+  width: 100%;
+  display: flex;
+  gap: rem(150);
+  @include mq(){
+    flex-direction: column;
+  }
+}
+
+.c-card{
+  width: calc((100% - rem(150)*2) / 3 );
+  font-size: rem(22);
+  letter-spacing: rem(calc(22 * 0.05));
+  @include mq(md){
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+.c-card__img{
+
+}
+
+.c-card__info{
+display: flex;
+align-items: center;
+gap: rem(20);
+margin-top: rem(10);
+}
+
+.c-card__info p{
+  border: rem(2) solid #78DAB1;
+  border-image: linear-gradient(90deg,#78DAB1 0%,#ACDE5C 100%);
+  border-image-slice: 1;
+  padding: rem(8) rem(16);
+  font-family: $font-sub;
+  font-size: rem(16);
+}
+
+.c-card__text{
+  font-family: $font-sub;
+  margin-top: rem(10);
+  flex-shrink: 1;
+}
+

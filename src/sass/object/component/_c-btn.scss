@@ -1,0 +1,36 @@
+@use "global" as *;
+@use "sass:math";
+
+.c-btn{
+  display: flex;
+}
+.c-btn__text{
+  font-size: rem(31);
+  letter-spacing: rem(1.55);
+  text-transform: capitalize;
+  display: block;
+  width: rem(300);
+  padding: rem(15);
+  text-align: center;
+  border-left: solid rem(2) $black;
+  border-bottom: solid rem(2) $black;
+  position: relative;
+}
+
+.c-btn__text::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  height: rem(2);
+  width: 100%;
+  background: linear-gradient(90deg,#000 0%, #000 75%,transparent 75%,transparent 100%,);
+}
+
+.c-btn img{
+  height: auto;
+  width: rem(48);
+  margin-left: rem(-15);
+  object-fit: contain;
+}

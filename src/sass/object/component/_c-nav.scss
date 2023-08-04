@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-nav{
+  display: flex;
+  gap: rem(42);
+}
+.c-nav__item{
+  text-transform: capitalize;
+  font-size: rem(31);
+  letter-spacing: 0.05em;
+  position: relative;;
+}
+.c-nav__item::after{
+  content: "";
+  display: inline-block;
+  width: rem(25);
+  height: 3px;
+  background: linear-gradient(90deg,#78DAB1 0%,#ACDE5C 100%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .4s ease-in-out;
+  display: none;
+}
+.c-nav__item:hover::after{
+  display: block;
+}

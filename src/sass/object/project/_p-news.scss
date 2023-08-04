@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-news{
+  position: relative;
+}
+.p-news::before{
+  content: "";
+  position: absolute;
+  top: rem(-90);
+  left: 0;
+  display: block;
+  width: 100%;
+  height: rem(400);
+  background: linear-gradient(90deg, transparent 0%, transparent 37.5%, #F4F2F0 37.5%, #F4F2F0 100%);
+  z-index: -1;
+}
+
+.p-news__title{
+  text-align: center;
+}
+
+.p-news__card{
+  margin-top: rem(101);
+}
+
+.p-news__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: rem(89);
+}

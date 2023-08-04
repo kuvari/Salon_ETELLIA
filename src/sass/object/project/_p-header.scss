@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-header-logo {}
+.p-header-wrap {
+  
+}
+.p-header-wrap__info {
+  display: flex;
+  gap: rem(30);
+  height: rem(60);
+  justify-content: right;
+}
+.p-header-wrap__info a:last-child{
+  display: flex;
+}
+.p-header-wrap__nav {
+  margin-top: rem(30);
+}
+.p-header-wrap__info img{
+  width: rem(40);
+  object-fit: contain;
+}

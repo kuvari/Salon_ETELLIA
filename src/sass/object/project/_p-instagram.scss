@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-instagram {}
+.p-instagram__wrap {
+  display: flex;
+  width: 100%;
+  padding: rem(40) 0;
+  background-color: #F4F2F0;
+}
+.p-instagram__wrap *{
+  width: calc(100% / 6);
+}
+.p-instagram__instagram{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.p-instagram__instagram p{
+  width: 100%;
+  font-size: rem(43);
+  font-family: $font-main;
+  font-style: italic;
+  font-weight: medium;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #FEC11D 0%, #C0009F 100%);
+  color: red;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+.p-instagram__instagram img{
+margin-top: rem(10);
+}
+.p-instagram__photos {}
