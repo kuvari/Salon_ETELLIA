@@ -35,16 +35,23 @@
 
 .c-info{
   display: flex;
+  width: 50%;
   line-height: rem(40);
 }
 .c-info__title{
   width: 25%;
   font-size: rem(31);
 }
+.c-info__title__right{
+  width: 35%;
+}
 .c-info__center{
   width: 25%;
   position: relative;
   padding-left: rem(25);
+}
+.c-info__center-left{
+  width: 45%;
 }
 .c-info__center::after{
   content: "";
@@ -57,7 +64,10 @@
 }
 
 .c-info__right{
-  width: 50%;
+  width: 40%;
+}
+.c-info__right-left{
+  width: 30%;
 }
 .c-info__text-nomal{
   font-size: rem(22);

@@ -12,7 +12,7 @@
   height: 2px;
   width: calc(100% + rem(3.5));
   position: absolute;
-  bottom: 0;
+  bottom: rem(-2);
   left: rem(-2);
   background: linear-gradient(90deg,#78DAB1 0%,#ACDE5C 100%);
   z-index: 1;
@@ -20,7 +20,10 @@
 
 .c-contact p{
   position: relative;
-  padding: 1rem 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .c-contact p::before{
   content: "";

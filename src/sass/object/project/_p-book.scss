@@ -1,7 +1,26 @@
 @use "global" as *;
 
-.p-book {}
-.p-book__title {}
-.p-book__text {}
-.p-book__wrap {}
-.p-book__content {}
+.p-book__bg{
+  background-image: url(/images/p-book.jpg);
+}
+.p-book__container {
+  padding: rem(173) 0;
+  text-align: center;
+}
+.p-book__title {
+  
+}
+.p-book__text {
+  margin-top: rem(100);
+  font-size: rem(22);
+  font-family: $font-sub;
+  letter-spacing: 0.05em;
+}
+.p-book__wrap {
+  margin-top: rem(100);
+  display: flex;
+  gap: rem(50);
+}
+.p-book__content {
+  width: calc((100% - (rem(50) * 2) / 3));
+}

@@ -16,5 +16,5 @@
   left: rem(55);
   height: 2px;
   width: rem(300);
-  background: linear-gradient(90deg, #000 0%, #000 65%, #fff 65%,#fff 70%,#000 70%,#000 75%,#fff 75%,#fff 80%,#000 80%,#000 100%);
+  background: linear-gradient(90deg, #000 0%, #000 65%, transparent 65%,transparent 70%,#000 70%,#000 75%,transparent 75%,transparent 80%,#000 80%,#000 100%);
 }

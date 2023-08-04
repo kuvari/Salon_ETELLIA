@@ -28,7 +28,7 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <header class="p-header l-inner">
+  <header class="p-header l-inner l-inner__header">
     <h1 class="p-header-logo c-logo">Salon ETELLIA</h1>
     <div class="p-header-wrap">
       <div class="p-header-wrap__info">
@@ -54,14 +54,14 @@
     </div>
   </header>
 
-  <section class="p-hero">
+  <section class="p-hero l-inner__hero">
     <div class="p-hero__view">
       <img src="/images/p-hero.png" alt="メインビュー">
     </div>
     <p class="p-hero__title">Close to you, make you beautiful & relaxed.</p>
   </section>
 
-  <section class="p-concept">
+  <section class="p-concept l-inner l-inner__concept">
     <div class="p-concept__wrap">
       <div class="p-concept__title">
         <p class="c-section-title">concept</p>
@@ -79,31 +79,37 @@
         </div> 
       </div>  
     </div>
+    <div class="p-concept__img">
+      <img src="/images/p-concept.jpg" alt="内観">
+    </div>
   </section>
 
-  <section class="p-menu">
+  <section class="p-menu l-inner l-inner__menu">
+    <div class="p-menu__img">
+      <img src="/images/p-menu_center.jpg" alt="椅子">
+    </div>
     <div class="p-menu__wrap">
       <div class="p-menu__title">
         <p class="c-section-title">menu</p>
       </div>
       <ul class="p-menu__menus">
-        <li class="c-menu__wrap">
+        <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Shampoo</p>
           <p class="c-menu__price">¥4,500</p>
         </li>
-        <li class="c-menu__wrap">
+        <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Treatment</p>
           <p class="c-menu__price">¥7,500</p>
         </li>
-        <li class="c-menu__wrap">
+        <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Color</p>
           <p class="c-menu__price">¥10,500</p>
         </li>
-        <li class="c-menu__wrap">
+        <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Perm</p>
           <p class="c-menu__price">¥12,500</p>
         </li>
-        <li class="c-menu__wrap">
+        <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Straight</p>
           <p class="c-menu__price">¥19,500</p>
         </li>
@@ -117,12 +123,17 @@
     </div>
   </section>
 
-  <section class="p-styles">
+  <section class="p-styles l-inner__styles">
     <div class="p-styles__title">
       <p class="c-section-title">styles</p>
     </div>
     <div class="p-styles__photos">
-
+      <img src="/images/p-styles_1.jpg" alt="レディースショート">
+      <img src="/images/p-styles_2.jpg" alt="メンズ無造作ショート">
+      <img src="/images/p-styles_3.jpg" alt="ロングパーマ">
+      <img src="/images/p-styles_4.jpg" alt="ロングパーマ">
+      <img src="/images/p-styles_5.jpg" alt="メンズショート">
+      <img src="/images/p-styles_6.jpg" alt="ボブショート">
     </div>
     <div class="p-styles__btn">
       <div class="c-btn">
@@ -132,7 +143,7 @@
   </div>
   </section>
 
-  <section class="p-news l-inner">
+  <section class="p-news l-inner l-inner__news">
     <div class="p-news__title">
       <p class="c-section-title">news</p>
     </div>
@@ -182,18 +193,24 @@
     </div>
 </section>
 
-  <section class="p-greeting">
+  <section class="p-greeting l-inner l-inner__greeting">
     <div class="p-greeting__wrap">
       <div class="p-greeting__title">
-
+        <p class="c-section-title">greeting</p>
       </div>
-      <p class="p-greeting__text">Salon ETELLIAの全てのメニューでは、髪の素のキレイさを損なわない、ダメージの抑えられるものを使用します。<br>それは、手を加えすぎた無理のあるスタイルより、素のキレイさを活かした髪のほうがより美しいと考えるからです。</p>
-      <p class="p-greeting__text">また、サロンではよかったけど、家で再現できない…。これじゃご満足いただけないはずです。お客様のライフスタイルに沿った、お客様の手で再現できるスタイルの提案を心がけています。</p>
-      <p class="p-greeting__text">技術的な面ではもちろん、お客様のイメージを形にし、髪と一緒に心も軽くなっていただくのが私たちの仕事です。<br>髪や美容に関する悩みや、ちょっとした要望など、なんでもrelaにご相談下さい。<br>決して当たり前ではない「貴方のためのサービス」をご用意して、お待ちしています。</p>
+      <p class="p-greeting__text">
+        Salon ETELLIAの全てのメニューでは、髪の素のキレイさを損なわない、ダメージの抑えられるものを使用します。<br>それは、手を加えすぎた無理のあるスタイルより、素のキレイさを活かした髪のほうがより美しいと考えるからです。<br>
+      <br>また、サロンではよかったけど、家で再現できない…。これじゃご満足いただけないはずです。お客様のライフスタイルに沿った、お客様の手で再現できるスタイルの提案を心がけています。<br>
+      <br>技術的な面ではもちろん、お客様のイメージを形にし、髪と一緒に心も軽くなっていただくのが私たちの仕事です。<br>髪や美容に関する悩みや、ちょっとした要望など、なんでもrelaにご相談下さい。<br>決して当たり前ではない「貴方のためのサービス」をご用意して、お待ちしています。
+      </p>
+    </div>
+    <div class="p-greeting__images">
+      <div class="p-greeting__img-main"><img src="/images/p-greeting_main.jpg" alt="店長"></div>
+      <div class="p-greeting__img-sub"><img src="/images/p-greeting_sub.jpg" alt="美容師の道具"></div>
     </div>
   </section>
 
-  <section class="p-instagram">
+  <section class="p-instagram l-inner__instagram">
     <div class="p-instagram__wrap">
       <div class="p-instagram__instagram">
         <p>instagram</p>
@@ -207,11 +224,12 @@
     </div>
   </section>
 
-  <section class="p-book">
+  <section class="p-book p-book__bg">
+  <div class="p-book__container l-inner__book">
     <div class="p-book__title">
-
+      <p class="c-section-title">book</p>
     </div>
-    <p class="p-book__text"></p>
+    <p class="p-book__text">ご予約はお電話もしくはコンタクトフォームより承っております。<br>営業時間外でもお伺いできることがありますのでお気軽にお問い合わせください。</p>
     <div class="p-book__wrap">
       <div class="p-book__content">
         <a href="tel:042-111-1111" class="c-contact c-contact__book">
@@ -232,30 +250,28 @@
         </a>
       </div>
     </div>
+  </div>
   </section>
 
-  <section class="p-bottom">
+  <section class="p-bottom l-inner__bottom">
     <div class="p-bottom__img">
       <img src="/images/p-footer.jpg" alt="店舗外観">
     </div>
-    <div class="p-bottom__logo c-logo">Salon ETELLIA</div>
-  </section>
-
-  <footer class="p-footer">
-    <div class="p-footer__infos">
+    <div class="p-bottom__logo c-logo l-inner">Salon ETELLIA</div>
+    <div class="p-bottom__infos l-inner">
       <div class="c-info">
         <div class="c-info__title">Infomation</div>
-        <div class="c-info__center">
+        <div class="c-info__center c-info__center-left">
           <p class="c-info__text-nomal">千葉県松戸市根本450-2</p>
           <p class="c-info__text-nomal">TEL：042-111-1111</p>
           <img class="c-info__img" src="/images/c-icon_instagram.png" alt="インスタアイコン">
         </div>
-        <div class="c-info__right">
+        <div class="c-info__right c-info__right-left">
           <p class="c-info__text-nomal">Google Map</p>
         </div>
       </div>
       <div class="c-info">
-        <div class="c-info__title">Opening hours</div>
+        <div class="c-info__title c-info__title__right">Opening hours</div>
         <div class="c-info__center">
           <p class="c-info__text">火曜日 ~ <span>土</span>曜日</p>
           <p class="c-info__text">日曜日</p>
@@ -268,7 +284,11 @@
         </div>
       </div>
     </div>
-    <div class="p-footer__wrap">
+
+  </section>
+
+  <footer class="p-footer">
+    <div class="p-footer__wrap  l-inner">
       <div class="p-footer__content">
         <ul class="p-footer__nav c-nav">
           <li class="c-nav__item"><a href="#" class="c-nav-link">home</a></li>

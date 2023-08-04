@@ -1,7 +1,48 @@
 @use "global" as *;
 
-.p-menu {}
-.p-menu__wrap {}
+.p-menu {
+  display: flex;
+  gap: rem(149);
+  position: relative;
+  align-items: center;
+
+}
+.p-menu::before{
+  content: "";
+  position: absolute;
+  top: rem(-90);
+  left: 0;
+  display: block;
+  width: 100%;
+  height: rem(760);
+  background: linear-gradient(90deg, transparent 0%, transparent 32.291666666%, #F4F2F0 32.291666666%, #F4F2F0 100%);
+  z-index: -1;
+}
+.p-menu__img{
+  width: rem(530);
+  height: 100%;
+  position: relative;
+  // aspect-ratio: calc((380 / 530) * 100%);
+}
+.p-menu__img::after{
+  content: "";
+  position: absolute;
+  top: rem(10);
+  left: rem(-10);
+  width: 99.92805180270205%;
+  height: 100%;
+  border: solid 2px $black;
+}
+.p-menu__wrap {
+  width: rem(478.24);
+}
 .p-menu__title {}
-.p-menu__menus {}
-.p-menu__btn {}
+.p-menu__menus {
+  margin-top: rem(100);
+}
+.p-menu__menu:not(:first-child){
+  margin-top: rem(50);
+}
+.p-menu__btn {
+  margin-top: rem(100);
+}

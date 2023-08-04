@@ -1,6 +1,14 @@
 @use "global" as *;
 
 .p-instagram {}
-.p-instagram__wrap {}
+.p-instagram__wrap {
+  display: flex;
+  width: 100%;
+  padding: rem(40) 0;
+  background-color: #F4F2F0;
+}
+.p-instagram__wrap *{
+  width: calc(100% / 6);
+}
 .p-instagram__instagram {}
 .p-instagram__photos {}

@@ -1,9 +1,26 @@
 @use "global" as *;
 
-.p-footer {}
+.p-footer {
+  margin-top: rem(100);
+  padding: rem(30) 0 rem(12);
+  background-color: $black;
+}
 .p-footer__infos {}
-.p-footer__wrap {}
-.p-footer__content {}
-.p-footer__nav {}
-.p-footer__policy {}
-.p-footer__copy {}
+.p-footer__wrap {
+  color: $white;
+}
+.p-footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+.p-footer__nav {
+  
+}
+.p-footer__policy {
+  font-size: rem(22);
+  text-transform: capitalize;
+}
+.p-footer__copy {
+  margin-top: rem(60);
+  text-align: center;
+}
