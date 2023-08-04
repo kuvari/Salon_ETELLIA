@@ -3,13 +3,13 @@
 .c-contact{
   display: flex;
   position: relative;
-  border-top: solid 2px $black;
-  border-left: solid 2px $black;
-  border-right: solid 2px $black;
+  border-top: solid rem(2) $black;
+  border-left: solid rem(2) $black;
+  border-right: solid rem(2) $black;
 } 
 .c-contact::after{
   content: "";
-  height: 2px;
+  height: rem(2);
   width: calc(100% + rem(3.5));
   position: absolute;
   bottom: rem(-2);
@@ -28,7 +28,7 @@
 .c-contact p::before{
   content: "";
   height: 100%;
-  width: 2px;
+  width: rem(2);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -57,5 +57,9 @@
 }
 .c-contact__book{
   width: calc((100% - (rem(50) * 2)) / 3);
+  height: rem(100);
   font-size: rem(31);
+}
+.c-contact__book img{
+  filter: grayscale(100%) brightness(0);
 }

@@ -21,6 +21,4 @@
   display: flex;
   gap: rem(50);
 }
-.p-book__content {
-  width: calc((100% - (rem(50) * 2) / 3));
-}
+.p-book__content {}

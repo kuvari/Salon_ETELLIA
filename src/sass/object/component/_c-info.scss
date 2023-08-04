@@ -41,6 +41,7 @@
 .c-info__title{
   width: 25%;
   font-size: rem(31);
+  letter-spacing: 0.05em;
 }
 .c-info__title__right{
   width: 35%;
@@ -56,10 +57,10 @@
 .c-info__center::after{
   content: "";
   height: 22%;
-  width: 2px;
+  width: rem(2);
   position: absolute;
   top: calc((6 / 100) * 100%);
-  left: 0;
+  left: rem(15);
   background: linear-gradient(90deg,#78DAB1 0%,#ACDE5C 100%);
 }
 
@@ -68,6 +69,13 @@
 }
 .c-info__right-left{
   width: 30%;
+  display: flex;
+  align-items: start;
+}
+.c-info__right-left img{
+  width: rem(20);
+  object-fit: contain;
+  margin-right: rem(17);
 }
 .c-info__text-nomal{
   font-size: rem(22);
@@ -76,6 +84,9 @@
 }
 .c-info__img{
   height: rem(40);
+}
+.c-info__img--black{
+  filter: grayscale(100%) brightness(0);
 }
 .c-info__text{
   font-size: rem(16);

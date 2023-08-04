@@ -33,7 +33,17 @@
   margin-top: rem(200);
 }
 .l-inner__menu{
-  margin-top: rem(219);
+  margin-top: rem(230);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1,157.24px + $padding-pc * 2;
+  padding-right: rem(strip-unit($padding-pc));
+  padding-left: rem(strip-unit($padding-pc));
+  @include mq(md) {
+    padding-right: rem(strip-unit($padding-sp));
+    padding-left: rem(strip-unit($padding-sp));
+  }
 }
 .l-inner__styles{
   margin-top: rem(355);

@@ -15,6 +15,9 @@
   height: rem(60);
   justify-content: right;
 }
+.p-header-wrap__info a:last-child{
+  display: flex;
+}
 .p-header-wrap__nav {
   margin-top: rem(30);
 }

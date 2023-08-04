@@ -31,7 +31,7 @@ margin-top: rem(10);
 }
 
 .c-card__info p{
-  border: 2px solid #78DAB1;
+  border: rem(2) solid #78DAB1;
   border-image: linear-gradient(90deg,#78DAB1 0%,#ACDE5C 100%);
   border-image-slice: 1;
   padding: rem(8) rem(16);

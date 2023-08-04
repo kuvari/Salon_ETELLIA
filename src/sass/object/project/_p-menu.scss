@@ -1,11 +1,7 @@
 @use "global" as *;
 
-.p-menu {
-  display: flex;
-  gap: rem(149);
+.p-menu{
   position: relative;
-  align-items: center;
-
 }
 .p-menu::before{
   content: "";
@@ -18,25 +14,71 @@
   background: linear-gradient(90deg, transparent 0%, transparent 32.291666666%, #F4F2F0 32.291666666%, #F4F2F0 100%);
   z-index: -1;
 }
-.p-menu__img{
+.p-menu__container {
+  width: rem(1157);
+  display: flex;
+  gap: rem(149);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.p-menu__images{
   width: rem(530);
   height: 100%;
-  position: relative;
   // aspect-ratio: calc((380 / 530) * 100%);
+}
+.p-menu__img{
+  position: relative;
+}
+.p-menu__img--top{
+  position: absolute;
+  top: -41%;
+  left: 11.5%;
+}
+.p-menu__img--top img{
+  width: rem(530);
+}
+.p-menu__img--bottom{
+  position: absolute;
+  bottom: -41%;
+  left: 11.5%;
+}
+.p-menu__img--bottom img{
+  width: rem(530);
+}
+.p-menu__img--top::after{
+  content: "";
+  position: absolute;
+  top: rem(10);
+  left: rem(-10);
+  width: 100%;
+  height: 100%;
+  border: solid rem(2) $black;
+}
+.p-menu__img--bottom::after{
+  content: "";
+  position: absolute;
+  top: rem(10);
+  left: rem(-10);
+  width: 100%;
+  height: 100%;
+  border: solid rem(2) $black;
 }
 .p-menu__img::after{
   content: "";
   position: absolute;
   top: rem(10);
   left: rem(-10);
-  width: 99.92805180270205%;
+  width: 100%;
   height: 100%;
-  border: solid 2px $black;
+  border: solid rem(2) $black;
 }
 .p-menu__wrap {
   width: rem(478.24);
 }
-.p-menu__title {}
+.p-menu__title {
+  margin-left: rem(60);
+}
 .p-menu__menus {
   margin-top: rem(100);
 }

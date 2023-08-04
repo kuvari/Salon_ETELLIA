@@ -1,9 +1,11 @@
 @use "global" as *;
 
-.p-concept {
+.p-concept{
+  position: relative;
+}
+.p-concept__container {
   display: flex;
   gap: rem(125);
-  position: relative;
 }
 .p-concept::before{
   content: "";
@@ -31,6 +33,7 @@
   font-size: rem(16);
   font-family: $font-sub;
   line-height: calc(33 / 16);
+  letter-spacing: 0.05em;
 }
 .p-concept__btn {
   margin-top: rem(101);
@@ -47,5 +50,5 @@
   left: rem(10);
   width: 99.92805180270205%;
   height: 100%;
-  border: solid 2px $black;
+  border: solid rem(2) $black;
 }
