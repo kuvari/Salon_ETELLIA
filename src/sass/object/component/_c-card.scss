@@ -6,6 +6,7 @@
   gap: rem(150);
   @include mq(){
     flex-direction: column;
+    gap: rem(75);
   }
 }
 
@@ -14,8 +15,9 @@
   font-size: rem(22);
   letter-spacing: rem(calc(22 * 0.05));
   @include mq(md){
-    width: 100%;
+    width: 75%;
     margin-inline: auto;
+    font-size: initial;
   }
 }
 
@@ -28,6 +30,9 @@ display: flex;
 align-items: center;
 gap: rem(20);
 margin-top: rem(10);
+@include mq(md){
+  font-size: rem(12);
+}  
 }
 
 .c-card__info p{
@@ -37,6 +42,9 @@ margin-top: rem(10);
   padding: rem(8) rem(16);
   font-family: $font-sub;
   font-size: rem(16);
+  @include mq(md){
+    font-size: rem(12);
+  }    
 }
 
 .c-card__text{

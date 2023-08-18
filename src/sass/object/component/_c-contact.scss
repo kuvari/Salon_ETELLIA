@@ -43,6 +43,9 @@
   width: 25%;
   object-fit: contain;
   padding: 0 5%;
+  @include mq(md){
+    padding: 2% 4%;
+  }
 }
 .c-contact-tel{
   letter-spacing: 0.2em;
@@ -54,11 +57,19 @@
 .c-contact__header{
   width: rem(260);
   font-size: rem(22);
+  @include mq(md){
+    font-size: initial;
+  }
 }
 .c-contact__book{
   width: calc((100% - (rem(50) * 2)) / 3);
   height: rem(100);
   font-size: rem(31);
+  @include mq(md){
+    width: 80%;
+    height: rem(50);
+    font-size: initial;
+  }
 }
 .c-contact__book img{
   filter: grayscale(100%) brightness(0);

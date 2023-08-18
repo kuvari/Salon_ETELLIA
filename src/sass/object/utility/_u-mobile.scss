@@ -6,3 +6,57 @@
     display: block;
   }
 }
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll_up {
+  @include mq(md){
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+.scroll_up.on {
+  @include mq(md){
+    transform: translateY(0);
+    opacity: 1.0;
+  }
+}
+
+/*----------------------------
+scroll_left ｜左から出現
+----------------------------*/
+.scroll_left {
+  @include mq(md){
+    transition: 0.8s ease-in-out;
+    transform: translateX(-30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+.scroll_left.on {
+  @include mq(md){
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transform: translateX(0);
+  }
+}
+
+/*----------------------------
+scroll_right ｜右から出現
+----------------------------*/
+.scroll_right {
+  @include mq(md){
+    transition: 0.8s ease-in-out;
+    transform: translateX(30px);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+.scroll_right.on {
+  @include mq(md){
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transform: translateX(0);
+  }
+}

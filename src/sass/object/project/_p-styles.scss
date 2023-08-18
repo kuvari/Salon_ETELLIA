@@ -4,17 +4,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mq(md){
+    align-items: initial;
+  }
 }
-.p-styles__title {}
+.p-styles__title {
+  @include mq(md){
+    text-align: center;
+  }
+}
 .p-styles__photos{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: rem(100);
+  @include mq(md){
+    margin-top: rem(60);
+  }
 }
 .p-styles__photos img{
   width: calc(100% / 3);
+  @include mq(md){
+    width: 50%;
+  }
 }
 .p-styles__btn {
   margin-top: rem(105);
+  @include mq(md){
+    margin-top: rem(60);
+  }
 }

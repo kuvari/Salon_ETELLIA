@@ -15,6 +15,9 @@
 
 .l-inner__header{
   margin-top: rem(30);
+  @include mq(md){
+    margin-top: initial;
+  }
 }
 .l-inner__hero{
   margin-top: rem(30);
@@ -25,12 +28,16 @@
   padding-right: rem(strip-unit($padding-pc));
   padding-left: rem(strip-unit($padding-pc));
   @include mq(md) {
+    margin-top: rem(60);
     padding-right: rem(strip-unit($padding-sp));
     padding-left: rem(strip-unit($padding-sp));
   }
 }
 .l-inner__concept{
   margin-top: rem(200);
+  @include mq(md){
+    margin-top: rem(150);
+  }
 }
 .l-inner__menu{
   margin-top: rem(230);
@@ -41,6 +48,7 @@
   padding-right: rem(strip-unit($padding-pc));
   padding-left: rem(strip-unit($padding-pc));
   @include mq(md) {
+    margin-top: rem(150);
     padding-right: rem(strip-unit($padding-sp));
     padding-left: rem(strip-unit($padding-sp));
   }
@@ -56,16 +64,26 @@
   @include mq(md) {
     padding-right: rem(strip-unit($padding-sp));
     padding-left: rem(strip-unit($padding-sp));
+    margin-top: rem(150);
   }
 }
 .l-inner__news{
   margin-top: rem(195);
+  @include mq(md){
+    margin-top: rem(150);
+  }
 }
 .l-inner__greeting{
   margin-top: rem(200);
+  @include mq(md){
+    margin-top: rem(150);
+  }
 }
 .l-inner__instagram{
   margin-top: rem(132);
+  @include mq(md){
+    margin-top: rem(150);
+  }
 }
 .l-inner__book{
   margin-top: rem(100);
@@ -75,12 +93,11 @@
   max-width: 1300px + $padding-pc * 2;
   padding-right: rem(strip-unit($padding-pc));
   padding-left: rem(strip-unit($padding-pc));
-  @include mq(md) {
-    padding-right: rem(strip-unit($padding-sp));
-    padding-left: rem(strip-unit($padding-sp));
+  @include mq(md){
+    margin-top: rem(150);
   }
-
 }
+
 .l-inner__bottom{
   margin-top: rem(100);
 }

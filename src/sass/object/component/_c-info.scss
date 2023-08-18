@@ -37,22 +37,39 @@
   display: flex;
   width: 50%;
   line-height: rem(40);
+  @include mq(md){
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .c-info__title{
   width: 25%;
   font-size: rem(31);
   letter-spacing: 0.05em;
+  @include mq(md){
+    width: 100%;
+    font-size: initial;
+  }
 }
 .c-info__title__right{
   width: 35%;
+  @include mq(md){
+    width: 100%;
+  }
 }
 .c-info__center{
   width: 25%;
   position: relative;
   padding-left: rem(25);
+  @include mq(md){
+    width: 100%;
+  }
 }
 .c-info__center-left{
   width: 45%;
+  @include mq(md){
+    width: 100%;
+  }
 }
 .c-info__center::after{
   content: "";
@@ -66,11 +83,17 @@
 
 .c-info__right{
   width: 40%;
+  @include mq(md){
+    width: 100%;
+  }
 }
 .c-info__right-left{
   width: 30%;
   display: flex;
   align-items: start;
+  @include mq(md){
+    width: 100%;
+  }
 }
 .c-info__right-left img{
   width: rem(20);
@@ -81,6 +104,9 @@
   font-size: rem(22);
   font-family: $font-sub;
   letter-spacing: 0.05em;
+  @include mq(md){
+    font-size: initial;
+  }
 }
 .c-info__img{
   height: rem(40);

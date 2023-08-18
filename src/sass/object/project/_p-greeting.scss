@@ -13,20 +13,36 @@
   height: rem(600);
   background: linear-gradient(90deg, #F4F2F0 0%, #F4F2F0 62.5%, transparent 62.5%, transparent 100%);
   z-index: -1;
+  @include mq(md){
+    top: rem(-30);
+  }
 }
 .p-greeting__container {
   display: flex;
   gap: rem(67);
+  @include mq(md){
+    flex-direction: column;
+  }
 }
 .p-greeting__wrap {
   width: rem(750);
+  @include mq(md){
+    width: 100%;
+  }
 }
 .p-greeting__images {
   width: rem(673);
   position: relative;
+  @include mq(md){
+    width: 65%;
+    margin-inline: auto;
+  }
 }
 .p-greeting__title{
   text-align: center;
+  @include mq(md){
+    text-align: center;
+  }
 }
 .p-greeting__text{
   font-size: rem(16);
@@ -34,12 +50,20 @@
   letter-spacing: 0.05em;
   line-height: calc(33 / 16);
   margin-top: rem(100);
+  @include mq(md){
+    line-height: 1.8;
+    margin-top: rem(60);
+  }
 }
 .p-greeting__img-main{
   margin-top: rem(-80);
   width: rem(384.55);
   // aspect-ratio: calc((384.55 / 470) * 100%);
   position: relative;
+  @include mq(md){
+    width: 100%;
+    margin-top: initial;
+  }
 }
 .p-greeting__img-main::after{
   content: "";
@@ -56,6 +80,9 @@
   // aspect-ratio: calc((372.6 / 230) * 100%);
   position: absolute;
   right: 0;
+  @include mq(md){
+    display: none;
+  }
 }
 .p-greeting__img-sub::before{
   content: "";
