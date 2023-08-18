@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-book__bg{
-  background-image: url(/images/p-book.jpg);
+  background-image: url(../images/p-book.jpg);
   @include mq(md){
     background-repeat: no-repeat;
     background-size: cover;
