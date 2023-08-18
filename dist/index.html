@@ -48,17 +48,33 @@
           <img src="/images/c-icon_instagram.png" alt="インスタアイコン">
         </a>
       </div>
-      <div class="p-header-wrap__nav">
+      <nav class="p-header-wrap__nav">
         <ul class="c-nav">
-          <li class="c-nav__item"><a href="#" class="c-nav-link">home</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">concept</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">menu</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">news</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">access</a></li>
+          <li class="c-nav__item"><a href="#" class="c-nav__link">home</a></li>
+          <li class="c-nav__item"><a href="#" class="c-nav__link">concept</a></li>
+          <li class="c-nav__item"><a href="#" class="c-nav__link">menu</a></li>
+          <li class="c-nav__item"><a href="#" class="c-nav__link">news</a></li>
+          <li class="c-nav__item"><a href="#" class="c-nav__link">access</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </header>
+    <!--SPハンバーガーボタン-->
+    <div class="p-header-wrap__hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!--SPメニュー-->
+    <nav class="p-header-wrap__nav-SP">
+      <ul class="c-nav">
+        <li class="c-nav__item-white"><a href="#" class="c-nav__link">home</a></li>
+        <li class="c-nav__item-white"><a href="#" class="c-nav__link">concept</a></li>
+        <li class="c-nav__item-white"><a href="#" class="c-nav__link">menu</a></li>
+        <li class="c-nav__item-white"><a href="#" class="c-nav__link">news</a></li>
+        <li class="c-nav__item-white"><a href="#" class="c-nav__link">access</a></li>
+      </ul>
+    </nav>
+</header>
 
   <section class="p-hero l-inner__hero">
     <div class="p-hero__view">
@@ -69,7 +85,7 @@
 
   <section class="p-concept p-concept__bg">
   <div class="p-concept__container l-inner l-inner__concept">
-    <div class="p-concept__wrap">
+    <div class="p-concept__wrap scroll_right">
       <div class="p-concept__title">
         <p class="c-section-title">concept</p>
       </div> 
@@ -86,7 +102,7 @@
         </div> 
       </div>  
     </div>
-    <div class="p-concept__img">
+    <div class="p-concept__img scroll_left">
       <img src="/images/p-concept.jpg" alt="内観">
     </div>
   </div>
@@ -96,33 +112,33 @@
   <div class="p-menu__img--top"><img src="/images/p-menu_top.jpg" alt="カットの様子"></div>
   <div class="p-menu__img--bottom"><img src="/images/p-menu_bottom.jpg" alt="内観"></div>
   <div class="p-menu__container l-inner l-inner__menu">
-    <div class="p-menu__images">
+    <div class="p-menu__images scroll_left">
       <div class="p-menu__img"><img src="/images/p-menu_center.jpg" alt="椅子"></div>
     </div>
-    <div class="p-menu__wrap">
+    <div class="p-menu__wrap scroll_right">
       <div class="p-menu__title">
-        <p class="c-section-title">menu</p>
+        <p class="c-section-title c-section-title__padding">menu</p>
       </div>
       <ul class="p-menu__menus">
         <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Shampoo</p>
-          <p class="c-menu__price">¥4,500</p>
+          <p class="c-menu__price">&yen;4,500</p>
         </li>
         <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Treatment</p>
-          <p class="c-menu__price">¥7,500</p>
+          <p class="c-menu__price">&yen;7,500</p>
         </li>
         <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Color</p>
-          <p class="c-menu__price">¥10,500</p>
+          <p class="c-menu__price">&yen;10,500</p>
         </li>
         <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Perm</p>
-          <p class="c-menu__price">¥12,500</p>
+          <p class="c-menu__price">&yen;12,500</p>
         </li>
         <li class="p-menu__menu c-menu__wrap">
           <p class="c-menu__text">Cut + Straight</p>
-          <p class="c-menu__price">¥19,500</p>
+          <p class="c-menu__price">&yen;19,500</p>
         </li>
       </ul>
       <div class="p-menu__btn">
@@ -135,7 +151,7 @@
   </div>
   </section>
 
-  <section class="p-styles l-inner__styles">
+  <section class="p-styles l-inner__styles scroll_right">
     <div class="p-styles__title">
       <p class="c-section-title c-section-title__padding">styles</p>
     </div>
@@ -156,7 +172,7 @@
   </section>
 
   <section class="p-news">
-  <div class="p-news__container l-inner l-inner__news">
+  <div class="p-news__container l-inner l-inner__news scroll_left">
     <div class="p-news__title">
       <p class="c-section-title c-section-title__padding">news</p>
     </div>
@@ -209,7 +225,7 @@
 
   <section class="p-greeting">
   <div class="p-greeting__container l-inner l-inner__greeting">
-    <div class="p-greeting__wrap">
+    <div class="p-greeting__wrap scroll_right">
       <div class="p-greeting__title">
         <p class="c-section-title c-section-title__padding">greeting</p>
       </div>
@@ -219,7 +235,7 @@
       <br>技術的な面ではもちろん、お客様のイメージを形にし、髪と一緒に心も軽くなっていただくのが私たちの仕事です。<br>髪や美容に関する悩みや、ちょっとした要望など、なんでもrelaにご相談下さい。<br>決して当たり前ではない「貴方のためのサービス」をご用意して、お待ちしています。
       </p>
     </div>
-    <div class="p-greeting__images">
+    <div class="p-greeting__images scroll_left">
       <div class="p-greeting__img-main"><img src="/images/p-greeting_main.jpg" alt="店長"></div>
       <div class="p-greeting__img-sub"><img src="/images/p-greeting_sub.jpg" alt="美容師の道具"></div>
     </div>
@@ -227,7 +243,7 @@
   </section>
 
   <section class="p-instagram l-inner__instagram">
-    <div class="p-instagram__wrap">
+    <div class="p-instagram__wrap scroll_right">
       <div class="p-instagram__instagram">
         <p>instagram</p>
         <img src="/images/c-icon_instagram.png" alt="インスタアイコン">
@@ -241,45 +257,46 @@
   </section>
 
   <section class="p-book p-book__bg">
-  <div class="p-book__container l-inner__book">
-    <div class="p-book__title">
-      <p class="c-section-title c-section-title__padding">book</p>
+    <div class="p-book__container l-inner__book scroll_left">
+      <div class="p-book__title">
+        <p class="c-section-title c-section-title__padding">book</p>
+      </div>
+      <p class="p-book__text">ご予約はお電話もしくはコンタクトフォームより承っております。<br>営業時間外でもお伺いできることがありますのでお気軽にお問い合わせください。</p>
+      <div class="p-book__wrap">
+          <a href="tel:042-111-1111" class="c-contact c-contact__book">
+            <img src="/images/c-icon_tel.png" alt="電話アイコン">
+            <p class="c-contact-tel">042-111-1111</p>
+          </a>
+          <a href="#" class="c-contact c-contact__book">
+            <img src="/images/c-icon_mail.png" alt="メールアイコン">
+            <p class="c-contact-text">contact</p>
+          </a>
+          <a href="#" class="c-contact c-contact__book">
+            <img src="/images/c-icon_instagram.png" alt="インスタアイコン">
+            <p class="c-contact-text">instagram</p>
+          </a>
+      </div>
     </div>
-    <p class="p-book__text">ご予約はお電話もしくはコンタクトフォームより承っております。<br>営業時間外でもお伺いできることがありますのでお気軽にお問い合わせください。</p>
-    <div class="p-book__wrap">
-        <a href="tel:042-111-1111" class="c-contact c-contact__book">
-          <img src="/images/c-icon_tel.png" alt="電話アイコン">
-          <p class="c-contact-tel">042-111-1111</p>
-        </a>
-        <a href="#" class="c-contact c-contact__book">
-          <img src="/images/c-icon_mail.png" alt="メールアイコン">
-          <p class="c-contact-text">contact</p>
-        </a>
-        <a href="#" class="c-contact c-contact__book">
-          <img src="/images/c-icon_instagram.png" alt="インスタアイコン">
-          <p class="c-contact-text">instagram</p>
-        </a>
-    </div>
-  </div>
   </section>
 
-  <section class="p-bottom l-inner__bottom">
+  <section class="p-bottom l-inner__bottom scroll_right">
     <div class="p-bottom__img">
       <img src="/images/p-footer.jpg" alt="店舗外観">
     </div>
     <div class="p-bottom__logo c-logo l-inner">Salon ETELLIA</div>
+
     <div class="p-bottom__infos l-inner">
       <div class="c-info">
         <div class="c-info__title">Infomation</div>
         <div class="c-info__center c-info__center-left">
           <p class="c-info__text-nomal">千葉県松戸市根本450-2</p>
-          <p class="c-info__text-nomal">TEL：042-111-1111</p>
+          <a href="tel:042-111-1111" class="c-info__text-nomal">TEL：042-111-1111</a>
           <img class="c-info__img c-info__img--black" src="/images/c-icon_instagram.png" alt="インスタアイコン">
         </div>
-        <div class="c-info__right c-info__right-left">
+        <a class="c-info__right c-info__right-left">
           <img src="/images/c-icon_map.png" alt="マップ">
           <p class="c-info__text-nomal">Google Map</p>
-        </div>
+        </a>
       </div>
       <div class="c-info">
         <div class="c-info__title c-info__title__right">Opening hours</div>
@@ -295,20 +312,40 @@
         </div>
       </div>
     </div>
+    <div class="p-bottom__sp">
+      <div class="p-bottom__sp-title">Infomation</div>
+      <div class="p-bottom__sp-wrap">
+        <p>千葉県松戸市根本450-2</p>
+        <a href="#">
+          <img src="/images/c-icon_map.png" alt="マップ">
+          <p>Google Map</p>
+        </a>
+        <a href="tel:042-111-1111">TEL：042-111-1111</a>
+      </div>
 
+      <div class="p-bottom__sp-title">Opening hours</div>
+      <div class="p-bottom__sp-wrap">
+        <p>火曜日 ~ 土曜日</p>
+        <p><span></span>10:00 ~ 19:00</p>
+        <p>日曜日</p>
+        <p><span></span>10:00 ~ 17:00</p>
+        <p>月曜日</p>
+        <p><span></span>定休日</p>
+      </div>
+    </div>
   </section>
 
   <footer class="p-footer">
     <div class="p-footer__wrap  l-inner">
       <div class="p-footer__content">
         <ul class="p-footer__nav c-nav">
-          <li class="c-nav__item"><a href="#" class="c-nav-link">home</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">concept</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">menu</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">news</a></li>
-          <li class="c-nav__item"><a href="#" class="c-nav-link">access</a></li>
+          <li class="c-nav__item-white"><a href="#" class="c-nav__link">home</a></li>
+          <li class="c-nav__item-white"><a href="#" class="c-nav__link">concept</a></li>
+          <li class="c-nav__item-white"><a href="#" class="c-nav__link">menu</a></li>
+          <li class="c-nav__item-white"><a href="#" class="c-nav__link">news</a></li>
+          <li class="c-nav__item-white"><a href="#" class="c-nav__link">access</a></li>
         </ul>
-        <div class="p-footer__policy">privacy policy</div>
+        <a href="#" class="p-footer__policy">privacy policy</a>
       </div>
       <div class="p-footer__copy">&copy; Salon ETELLIA.</div>
     </div>

@@ -3,12 +3,37 @@
 .c-nav{
   display: flex;
   gap: rem(42);
+  @include mq(md){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: rem(30);
+    letter-spacing: rem(1.5);
+    gap: rem(15);
+  }
+}
+.c-nav__link{
+  display: inline-block;
+  padding: rem(5) rem(5);
 }
 .c-nav__item{
   text-transform: capitalize;
   font-size: rem(31);
   letter-spacing: 0.05em;
-  position: relative;;
+  position: relative;
+  @include mq(md){
+    font-size: initial;
+  }
+}
+.c-nav__item-white{
+  text-transform: capitalize;
+  font-size: rem(22);
+  letter-spacing: 0.05em;
+  position: relative;
+  @include mq(md){
+    font-size: initial;
+  }
 }
 .c-nav__item::after{
   content: "";
@@ -25,4 +50,15 @@
 }
 .c-nav__item:hover::after{
   display: block;
+}
+
+.c-nav__item a{
+  display: block;
+  color: $black;
+  text-align: center;
+}
+.c-nav__item-white a{
+  display: block;
+  color: $white;
+  text-align: center;
 }

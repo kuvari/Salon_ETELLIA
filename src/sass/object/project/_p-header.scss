@@ -4,10 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mq(md){
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding-top: rem(20);
+  }
 }
 .p-header-logo {}
 .p-header-wrap {
-  
+  @include mq(md){
+    display: none;
+  }
 }
 .p-header-wrap__info {
   display: flex;
@@ -24,4 +32,76 @@
 .p-header-wrap__info img{
   width: rem(40);
   object-fit: contain;
+}
+// SPメニュー
+.p-header-wrap__nav-SP{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #111;
+  @include mq(md){
+      display: none;
+  }
+}
+.p-header-wrap__nav-SP.is-active{
+  display: block;
+}
+
+
+
+
+.p-header-wrap__hamburger{
+  display: none;
+  @include mq(md){
+    display: block;
+  }
+}
+.p-header-wrap__hamburger{
+  position: relative;
+  width: rem(25);
+  height: rem(24);
+  z-index: 2;
+}
+
+.p-header-wrap__hamburger span{
+  position: absolute;
+  width: inherit;
+  height: rem(3);
+  background-color: $black;
+  transition: 0.38s;
+  margin-top: rem(-3.5);
+}
+
+.p-header-wrap__hamburger span:nth-child(1){
+  top: 15%;
+}
+
+.p-header-wrap__hamburger span:nth-child(2){
+  top: 50%;
+}
+
+.p-header-wrap__hamburger span:nth-child(3){
+  top: 85%;
+}
+
+.p-header-wrap__hamburger.is-active span:nth-child(1){
+  top: 50%;
+  transform: rotate(45deg);
+  background-color: $white;
+}
+
+.p-header-wrap__hamburger.is-active span:nth-child(2){
+  top: 50%;
+  opacity: 0;
+  background-color: $white;
+}
+
+.p-header-wrap__hamburger.is-active span:nth-child(3){
+  top: 50%;
+  transform: rotate(-45deg);
+  background-color: $white;
 }

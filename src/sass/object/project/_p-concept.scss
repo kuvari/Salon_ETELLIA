@@ -6,6 +6,9 @@
 .p-concept__container {
   display: flex;
   gap: rem(125);
+  @include mq(md){
+    flex-direction: column;
+  }
 }
 .p-concept::before{
   content: "";
@@ -17,16 +20,31 @@
   height: rem(633);
   background: linear-gradient(90deg, #F4F2F0 0%, #F4F2F0 62.5%, transparent 62.5%, transparent 100%);
   z-index: -1;
+  @include mq(md){
+    top: rem(-30);
+  }
 }
 .p-concept__wrap {
   width: rem(750);
+  @include mq(md){
+    order: 1;
+    width: 100%;
+  }
 }
-.p-concept__title {}
+.p-concept__title {
+  @include mq(md){
+    text-align: center;
+  }
+}
 .p-concept__slogan {
   margin-top: rem(123);
   font-family: $font-sub;
   font-size: rem(22);
   letter-spacing: 0.05em;
+  @include mq(md){
+    margin-top: rem(80);
+    font-size: rem(20);
+  }
 }
 .p-concept__text {
   margin-top: rem(50);
@@ -34,14 +52,26 @@
   font-family: $font-sub;
   line-height: calc(33 / 16);
   letter-spacing: 0.05em;
+  @include mq(md){
+    margin-top: rem(30);
+    line-height: 1.8;
+  }
 }
 .p-concept__btn {
   margin-top: rem(101);
+  @include mq(md){
+    margin-top: rem(60);
+  }
 }
 .p-concept__img{
   width: rem(625.45);
   position: relative;
   // aspect-ratio: calc((625.45 / 750) * 100%);
+  @include mq(md){
+    width: 80%;
+    margin-inline: auto;
+    order: 1;
+  }
 }
 .p-concept__img::after{
   content: "";

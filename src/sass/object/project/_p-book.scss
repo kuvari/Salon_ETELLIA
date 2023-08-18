@@ -2,23 +2,41 @@
 
 .p-book__bg{
   background-image: url(/images/p-book.jpg);
+  @include mq(md){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 4%;
+  }
 }
 .p-book__container {
   padding: rem(173) 0;
   text-align: center;
+  @include mq(md){
+    padding: rem(100) rem(strip-unit($padding-sp));
+  }
 }
 .p-book__title {
-  
+  @include mq(md){
+    text-align: center;
+  }
 }
 .p-book__text {
   margin-top: rem(100);
   font-size: rem(22);
   font-family: $font-sub;
   letter-spacing: 0.05em;
+  @include mq(md){
+    margin-top: rem(60);
+    font-size: initial;
+  }
 }
 .p-book__wrap {
   margin-top: rem(100);
   display: flex;
   gap: rem(50);
+  @include mq(md){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .p-book__content {}

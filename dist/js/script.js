@@ -35,4 +35,32 @@ jQuery(function ($) {
     return false;
   });
 
+  //ハンバーガーメニュー
+  $('.p-header-wrap__hamburger').click(function() {
+    if ($(".p-header-wrap__hamburger").hasClass('is-active')) {
+      $(".p-header-wrap__hamburger").removeClass('is-active');
+      $(".p-header-wrap__nav-SP").fadeOut(300);
+    } else {
+      $(".p-header-wrap__hamburger").addClass("is-active");
+      $(".p-header-wrap__nav-SP").fadeIn(300);
+    }
+  });
+
+  //scroll_effect
+  $(window).scroll(function () {
+    var scrollAnimationElm = document.querySelectorAll('.scroll_up , .scroll_left , .scroll_right');
+    var scrollAnimationFunc = function () {
+      for (var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = 100;
+        if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+          scrollAnimationElm[i].classList.add('on');
+        }
+      }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+  });
+
 });
+
+

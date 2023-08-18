@@ -1,14 +1,24 @@
 @use "global" as *;
 
-.p-instagram {}
+.p-instagram {
+  background-color: #F4F2F0;
+}
 .p-instagram__wrap {
   display: flex;
   width: 100%;
   padding: rem(40) 0;
-  background-color: #F4F2F0;
+  @include mq(md){
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: rem(strip-unit($padding-sp));
+    padding-left: rem(strip-unit($padding-sp));
+  }
 }
 .p-instagram__wrap *{
   width: calc(100% / 6);
+  @include mq(md){
+    width: 50%;
+  }
 }
 .p-instagram__instagram{
   display: flex;
@@ -29,8 +39,21 @@
   color: red;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
+  @include mq(md){
+    font-size: rem(22);
+  }
 }
 .p-instagram__instagram img{
 margin-top: rem(10);
+@include mq(md){
+  width: rem(30);
 }
-.p-instagram__photos {}
+}
+.p-instagram__photos{
+  @include mq(md){
+  }
+}
+.p-instagram__photos:first-of-type {
+  @include mq(md){
+  }
+}

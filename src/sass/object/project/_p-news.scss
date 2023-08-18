@@ -13,14 +13,22 @@
   height: rem(400);
   background: linear-gradient(90deg, transparent 0%, transparent 37.5%, #F4F2F0 37.5%, #F4F2F0 100%);
   z-index: -1;
+  @include mq(md){
+    top: rem(-30);
+  }
 }
 
 .p-news__title{
   text-align: center;
+  @include mq(md){
+  }
 }
 
 .p-news__card{
   margin-top: rem(101);
+  @include mq(md){
+    margin-top: rem(60);
+  }
 }
 
 .p-news__btn {
@@ -28,4 +36,7 @@
   display: flex;
   justify-content: center;
   margin-top: rem(89);
+  @include mq(md){
+    margin-top: rem(60);
+  }
 }

@@ -8,6 +8,9 @@
   text-transform: capitalize;
   position: relative;
   display: inline-block;
+  @include mq(md){
+    font-size: rem(24);
+  }
 }
 .c-section-title::after{
   content: "";
@@ -17,7 +20,13 @@
   height: rem(2);
   width: rem(300);
   background: linear-gradient(90deg, #000 0%, #000 69%, transparent 69%, transparent 75%, #000 75%, #000 81%, transparent 81%, transparent 87.5%, #000 87.5%, #000 100%);
+  @include mq(md){
+    width: rem(100);
+  }
 }
 .c-section-title__padding{
   margin-left: rem(-40);
+  @include mq(md){
+    margin-left: initial;
+  }
 }

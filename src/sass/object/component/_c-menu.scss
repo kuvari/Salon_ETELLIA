@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.p-menu{
-
-}
 .c-menu__wrap{
   display: flex;
   justify-content: space-between;
   font-size: rem(22);
   position: relative;
   padding-left: 10%;
+  @include mq(md){
+    font-size: initial;
+  }
 }
 .c-menu__text{
   letter-spacing: 0.05em;
